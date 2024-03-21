@@ -1,0 +1,11 @@
+Internal - means that the JavaScript code is declared inside the HTML file
+<script>
+  console.log('Hello, world!');
+</script>
+
+External - means that we are referencing an external JavaScript file from the HTML file
+<script src="index.js"></script>
+Reminder for external:
+Must be declared either:
+- in the head of the HTML file
+- at the end of the body of the HTML file

@@ -1,0 +1,11 @@
+JavaScript Numbers
+1. Integer - whole numbers (positive / negative)
+let x = 3;
+2. Float - fractional numbers / decimal numbers (positive / negative)
+let pi = 3.14;
+3. Scientific Notation - represents very large or small numbers
+uses e to indicate power of 10
+let million = 1e6; // 1 * 10^6
+4. NaN (Not-a-Number) - returns NaN when it is an invalid mathematical operation or result
+let x = 100 / "Apple"; // returns NaN
+5. Infinity / -Infinity - represents positive / negative infinity.

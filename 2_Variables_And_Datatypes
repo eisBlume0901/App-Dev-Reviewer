@@ -1,0 +1,12 @@
+Reserved keywords for storing a variable
+const - used if the variable will not change throughout the program
+let - used if the variable will change / reassigned to another value throughout the program
+
+Reminders:
+
+JavaScript does not declare any data types. Instead, it can be inferred from the value assigned to the variable.
+
+let a = 1; // a is declared automatically as a number (integer)
+let b = "Hi"; // b is declared automatically as a string
+let c = 3.14; // c is declared automatically as a number (float)
+let d = 'd' // d is declared automatically as a string (character)
