@@ -9,3 +9,4 @@ let million = 1e6; // 1 * 10^6
 4. NaN (Not-a-Number) - returns NaN when it is an invalid mathematical operation or result
 let x = 100 / "Apple"; // returns NaN
 5. Infinity / -Infinity - represents positive / negative infinity.
+
