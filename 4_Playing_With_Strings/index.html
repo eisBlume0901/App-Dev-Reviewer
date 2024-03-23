@@ -7,13 +7,17 @@
     <title>Playing With Strings</title>
 </head>
 <body>
+<label for="user-name">Enter your name</label>
+<input type="text" id="user-name">
 <label for="user-string">Enter a string</label>
 <input type="text" id="user-string" />
-<button id="check-button">Check</button>
+<button type="submit">Submit</button>
 <fieldset>
     <legend>Results</legend>
-    <div id="string-with-index">
-    </div>
+    <h3 id="greet-user"></h3>
+    <p>Here is the information regarding to your inputted string</p>
+    <div id="string-info"></div>
+    <div id="string-with-index"></div>
 </fieldset>
 <script src="index.js"></script>
 </body>
