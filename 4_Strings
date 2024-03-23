@@ -1,0 +1,13 @@
+String Methods
+1. str.length - how long is the string
+2. str.charAt(index) - retrieves the character at the specified index
+3. concat(str1, str2, ...) - combines two or more strings
+4. str.indexOf(substr) - retrieves the index of the first occurrence of the specified substring
+5. str.substring(startIndex, endIndex) - retrieves the characters between two specified indices (endIndex is optional)
+6. str.slice(negativeIndex) - starts counting at the right to the left of the string
+7. str.toUpperCase() - converts string to uppercase
+8. str.toLowerCase() - converst string to lowercase
+9. str.trim() - removes whitespace from both ends of a string
+10. str.replace(oldValue, newValue) - replaces a specified value with another value in a string
+11. template strings
+`${stringVar}` - allows you to embed variables and expressions in a string
