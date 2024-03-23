@@ -5,31 +5,40 @@ const stringResult = document.querySelector("#string-result");
 const checkButton = Array.from(document.getElementsByTagName("button"));
 
 
-const convertType = () => {
+const convertStringToNum = () => {
     const stringVal = userString.value;
-    const numVal = userNumber.value;
 
-    if (stringVal === "" || numVal === "") {
-        alert("Please enter a value in both fields");
+    if (stringVal === "") {
+        alert("Please input a string in the string field");
         return;
     }
 
-    let numResult;
+    let numResult = Number(`${stringVal}`);
+    numberResult.textContent = `${numResult} is a ${typeof numResult}`;
+    userNumber.value = "";
+}
+const convertNumToString = () => {
+    const numVal = userNumber.value;
+
+    if (numVal === "") {
+        alert("Please input a number in the number field");
+        return;
+    }
+
     let strResult;
 
 
-    numResult = Number(stringVal);
     strResult = numVal.toString();
 
-    numberResult.textContent = `${stringVal} is ${typeof numResult}`;
-    stringResult.textContent = `${numVal} is ${typeof strResult}`;
+    stringResult.textContent = `${numVal} is a ${typeof strResult}`;
 
-    userNumber.value = "";
     userString.value = "";
 }
 
-checkButton.forEach(button => {
-    button.addEventListener("click", () => {
-        convertType();
-    });
-})
+checkButton[0].addEventListener("click", () => {
+    convertStringToNum();
+});
+
+checkButton[1].addEventListener("click", () => {
+    convertNumToString();
+});
